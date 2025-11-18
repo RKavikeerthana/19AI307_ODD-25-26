@@ -27,7 +27,7 @@ RegisterNumber:  212222100022
 ```
 
 ## SOURCE CODE:
-```python
+```
 import java.util.*;
 class BankAccount
 {
@@ -75,4 +75,5 @@ public class Main
 
 ## RESULT:
 Thus, the Java program demonstrating the use of access specifiers with private variables and public getter and setter methods was successfully executed.
+
 
