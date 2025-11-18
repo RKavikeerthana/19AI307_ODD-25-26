@@ -4,38 +4,21 @@
 Write a Java program to create a class called BankAccount with private instance variables accountNumber and balance. Provide public getter and setter methods to access and modify these variables.
 
 ## AIM:
-To write a Java program that defines a class BankAccount with private attributes accountNumber and balance, and provides public getter and setter methods to access and modify these values.
+To write a Java program to create a class called BankAccount with private instance variables accountNumber and balance. Provide public getter and setter methods to access and modify these variables.
 
 ## ALGORITHM :
-1. Define a class BankAccount with two private instance variables:
-
-        String accountNumber
-
-        double balance
-
-3. Create public getter and setter methods for both variables:
-
-      getAccountNumber() and setAccountNumber()
-   
-   
-      getBalance() and setBalance()
-
-5. In the main() method, create a Scanner object to read input from the user.
-
-6. Create an object of the BankAccount class.
-
-7. Read the account number and balance from the user and store them using setter methods.
-
-8. Retrieve and print the stored values using getter methods.
-
-9. Close the Scanner and end the program.
-
-
-
+1.	Start the program.
+2.	Import the necessary package 'java.util'
+3.	Create the BankAccount class with private variables and public getter/setter methods.
+4.	In main(), create a BankAccount object.
+5.	Read the account number and balance from the user.
+6.	Set these values using setter methods.
+7.	Display the account details using the display() method.
+8.	End the program.
 
 
 ## PROGRAM:
- ```
+  ```
 /*
 Program to implement a conditional statement using Java
 Developed by: KAVI KEERTHANA R
@@ -44,59 +27,52 @@ RegisterNumber:  212222100022
 ```
 
 ## SOURCE CODE:
-```
-import java.util.Scanner;
-
-class BankAccount {
-   
-    private String accountNumber;
-    private double balance;
-
-    
-    public String getAccountNumber() {
-        return accountNumber;
+```python
+import java.util.*;
+class BankAccount
+{
+    private String accno;
+    private double bal;
+    public String getAccountNo()
+    {
+        return accno;
     }
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
+    public void setAccountNo(String accno)
+    { 
+        this.accno=accno;
     }
-
-   
-    public double getBalance() {
-        return balance;
+    public double getBalance()
+    {
+        return bal;
     }
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void setBalance(double bal)
+    {
+        this.bal=bal;
+    }
+    public void display()
+    {
+        System.out.println("Account Number: "+accno);
+        System.out.println("Balance: "+bal);
     }
 }
-
-public class prog
- {
+public class Main
+{
     public static void main(String[] args)
- {
-        Scanner sc = new Scanner(System.in);
-
-        BankAccount account = new BankAccount();
-
-        String accNo = sc.nextLine();
-        double bal = sc.nextDouble();
-
-        account.setAccountNumber(accNo);
-        account.setBalance(bal);
-
-        System.out.println("Account Number: " + account.getAccountNumber());
-        System.out.println("Balance: " + account.getBalance());
-
-        sc.close();
+    {
+        Scanner sc=new Scanner(System.in);
+        BankAccount o=new BankAccount();
+        o.setAccountNo(sc.nextLine());
+        o.setBalance(sc.nextDouble());
+        o.display();
     }
 }
 ```
+
 
 ## OUTPUT:
-<img width="826" height="465" alt="image" src="https://github.com/user-attachments/assets/972c4fcf-d9d0-43f8-bc30-518764a4d55e" />
-
+<img width="822" height="373" alt="image" src="https://github.com/user-attachments/assets/53583a0e-fba0-4147-859c-0c12e07388b4" />
 
 
 ## RESULT:
-The program has been executed successfully and the desired output has been obtained.
-
+Thus, the Java program demonstrating the use of access specifiers with private variables and public getter and setter methods was successfully executed.
 
