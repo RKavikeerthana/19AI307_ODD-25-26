@@ -1,33 +1,23 @@
 # Ex.No:2(A) CLASS AND OBJECT
 
 ## QUESTION:
-Define a class Car with brand (String), color (String), and year (int). Create 2 different objects of Car  Assign values to attributes. Print the details of both cars.import java.util.Scanner;
+Create a class Vehicle with attributes as number, type and owner.
+
 ## AIM:
-To define a class Car with attributes brand, color, and year; create two objects of the class; assign values to their attributes; and print the details of both cars.
+To Create a class Vehicle with attributes as number, type and owner.
 
 ## ALGORITHM :
-1. Define a class Car with three data members:
-
-     String brand
-     String color
-     int year
- and a method printDetails() to display these values.
-
-2. In the main() method, create a Scanner object to read user inputs.
-
-3. Create the first object car1 and read its brand, color, and year from the user.
-
-4. Create the second object car2 and read its brand, color, and year.
-
-5. Call printDetails() for car1 to display its information.
-
-6. Call printDetails() for car2 to display its information.
-
-7.Close the scanner and end the program.
-
+1.	Start the program.
+2.	Import the necessary package 'java.util'
+3.	Import the package java.util.Scanner to read user input.
+4.	Create a class Vehicle with data members: (number, type, owner).
+5.	In the main() method, create a Scanner object.
+6.	Create two objects of the Vehicle class.
+7.	Read the details (number, type, owner) for both objects from user input.
+8.	Display the details of both vehicles.
 
 ## PROGRAM:
- ```
+  ```
 /*
 Program to implement a conditional statement using Java
 Developed by: KAVI KEERTHANA R
@@ -36,51 +26,40 @@ RegisterNumber:  212222100022
 ```
 
 ## SOURCE CODE:
-```
+```python
 import java.util.Scanner;
-
-class Car {
-    String brand;
-    String color;
-    int year;
-
-    void printDetails() {
-        System.out.println("Brand: " + brand);
-        System.out.println("Color: " + color);
-        System.out.println("Year: " + year);
-    }
+class Vehicle
+{
+    String number;
+    String type;
+    String owner;
 }
-
-class prog {
+public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        
-        Car car1 = new Car();
-        car1.brand = scanner.nextLine();
-        car1.color = scanner.nextLine();
-        car1.year = scanner.nextInt();
-        scanner.nextLine();
+        Vehicle v1 = new Vehicle();
+        v1.number = sc.next();
+        v1.type = sc.next();
+        v1.owner = sc.next();
 
-        
-        Car car2 = new Car();
-        car2.brand = scanner.nextLine();
-        car2.color = scanner.nextLine();
-        car2.year = scanner.nextInt();
+        Vehicle v2 = new Vehicle();
+        v2.number = sc.next();
+        v2.type = sc.next();
+        v2.owner = sc.next();
 
-        car1.printDetails();
-        car2.printDetails();
-
-        scanner.close();
+        System.out.println(v1.number + " | " + v1.type + " | " + v1.owner);
+        System.out.println(v2.number + " | " + v2.type + " | " + v2.owner);
     }
 }
+
 ```
 
 
 ## OUTPUT:
-<img width="597" height="685" alt="image" src="https://github.com/user-attachments/assets/05ebe553-f279-4f17-b125-675b4afd47bd" />
+<img width="900" height="270" alt="image" src="https://github.com/user-attachments/assets/f8664cb3-2be8-4087-90ff-8070fabf217d" />
 
 
 ## RESULT:
-The program has been executed successfully and the desired output has been obtained.
+Thus, a Java program to create a class Vehicle with attributes number, type, and owner was successfully implemented and executed.
 
