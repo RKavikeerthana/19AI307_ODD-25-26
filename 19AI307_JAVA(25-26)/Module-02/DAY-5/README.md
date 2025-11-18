@@ -25,7 +25,7 @@ RegisterNumber:  212222100022
 ```
 
 ## SOURCE CODE:
-```python
+```
 import java.util.*;
 class Game 
 {
@@ -56,4 +56,5 @@ public class Main
 
 ## RESULT:
 Thus, the Java program demonstrating the use of the static access modifier with multiple object references was successfully executed.
+
 
